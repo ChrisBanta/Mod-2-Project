@@ -1,6 +1,6 @@
 class SuperherosController < ApplicationController
     def index
-    @superheros = Superhero.all
-    render json: @superheros
+        @superheros = Superhero.all.sample(4)
+        render json: @superheros
     end 
 end
