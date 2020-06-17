@@ -3,7 +3,7 @@ class CreateQuestions < ActiveRecord::Migration[6.0]
     create_table :questions do |t|
       t.integer :number
       t.string :text
-      t.proc :formula
+      t.string :formula
 
       t.timestamps
     end
