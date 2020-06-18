@@ -6,7 +6,7 @@ Question.destroy_all
 for i in(1..731) do
     # x = rand(1..731)
 
-    data = RestClient.get "https://www.superheroapi.com/api.php/10222711255430098/#{i}"
+    data = RestClient.get "https://www.superheroapi.com/api.php/xxxxxxxxxxxxxxxxx/#{i}"
         json = JSON.parse(data)
         # json.each do |result|
             Superhero.create(name:json['name'], fullname:json['biography']['full-name'], 
@@ -21,6 +21,7 @@ end
 
 Question.create(number: 1, text: "Who wins in a race?")
                 
+
 Question.create(number: 2, text: "Who would you want as a trivia partner?")
 
 Question.create(number: 3, text: "If you were to invest in the future of one of these heroes, which would it be?")
