@@ -30,3 +30,9 @@ Question.create(number: 4, text: "If a bear attacked you, who would you want by 
 Question.create(number: 5, text: "If you needed to, let’s say, leap a tall building in a single bound, who could help you with that?")
 
 Question.create(number: 6, text: "Who is most likely to reveal her secret identity?")
+
+Question.create(number: 7, text: "Who is most likely to have a bald arch-enemy?")
+
+Question.create(number: 8, text: "FREE FOR ALL")
+
+Question.create(number: 9, text: "If you were stuck in a dark cave, with only a small flashlight, bats keep appearing as you walk, and there's a big boulder in the way...who would be best to help? The boulder looks like it can be moved.")
