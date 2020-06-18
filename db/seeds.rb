@@ -3,9 +3,10 @@ Question.destroy_all
 
 
 
-for i in(1..10) do
+for i in(1..731) do
+    # x = rand(1..731)
 
-    data = RestClient.get "https://www.superheroapi.com/api.php/xxxxxxxxxxxxxxxx/#{i}"
+    data = RestClient.get "https://www.superheroapi.com/api.php/10222711255430098/#{i}"
         json = JSON.parse(data)
         # json.each do |result|
             Superhero.create(name:json['name'], fullname:json['biography']['full-name'], 
